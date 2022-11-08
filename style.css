@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color0: #5e00c1;
+    --color1: #ff0000;
+    --color2: #ff4040;
+    --color3: white;
+    --color4:rgb(46, 46, 46);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(-45deg,black, rgb(177, 177, 177));
+    background-repeat: no-repeat;
+    background: cover;
+    display: flex;
+}
+.index-container{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+.div-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fto-index-joffre{
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 25px white;
+}
+.index-title{
+    line-height: 2em;
+    margin-bottom: 2em;
+    color: var(--color4);
+    letter-spacing: 0.1em;
+}
+span{
+    color: var(--color2);
+    font-size: 1.2em;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.index-paragraph{
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color4);
+}
+mark{
+    background-color: var(--color3);
+    padding: 3px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.604);
+}
+.btn-next-page{
+    color: var(--color2);
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 2px solid var(--color2);
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.577);
+    font-weight: 600;
+    color: var(--color3);
+}
+.btn-next-page:hover{
+    background-color: var(--color2);
+    color: white;
+    font-weight: bold;
+    transition:0.5s;
+}
+@media (max-width: 800px){
+    .fto-index-joffre{
+        width: 300px;
+    }
+    .div-group{
+        display: flex;
+        flex-direction: column-reverse;
+    }  
+}
+@media (max-width: 1200px) {
+    .div-group{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/*Second Page*/
+body.light{
+    background-image: linear-gradient(white,white);
+}
+.menu-navigator{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    height: 100%;
+    min-width: min-content;
+    
+}
+.container{
+    width: 100%;
+    margin: 20px 20px 0px 200px;
+}
+
+/*Menu*/
+.logo-joffre{
+    width: 150px;
+    margin: 20px auto;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu *{
+    text-decoration: none;
+    color: var(--color4);
+}
+.btn-menu{
+    width: 100%;
+    padding: 2em;
+}
+.btn-menu:hover{
+    background-color: rgb(214, 214, 214);
+    color: var(--color2);
+    font-weight: bolder;
+    transition: 0.7s linear;
+}
+.nav-icons{
+display: flex;
+justify-content: space-around ;
+margin: auto 10px 10px 10px;
+}
+.fa-github{
+    color: white;
+    transform: scale(1.3);
+}
+.fa-linkedin{
+    color: rgb(54, 98, 185);
+    transform: scale(1.3);
+}
+.fa-instagram{
+    color: purple;
+    transform: scale(1.3);
+}
+
+/*Input do Tema Noturno*/
+.checkbox-input{
+    position: absolute;
+    opacity: 0;
+}
+.checkbox-input:checked + .label-theme .circle{
+    transform: translateX(24px);
+}
+.theme-group{
+    display: flex;
+    justify-content: end;
+}
+.label-theme{
+    background-color: white;
+    border-radius: 52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    position: relative;
+    width: 50px;
+    height: 26px;  
+}
+.circle{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.fa-sun{
+    padding:4px;
+    color: rgb(255, 145, 0);
+}
+.fa-moon{
+    padding: 4px;
+    color: #5e00c1;
+}
+
+/*Corpo*/
+section{
+    margin-bottom: 2em;
+}
+.h2-styleset{
+    color: var(--color2);
+    margin: 1em 0px 1em 0px;
+}
+.h2-ensign{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+li{
+    list-style:circle;
+    margin-left: 20px;
+}
+footer{
+    text-align: center;
+    margin: auto 0px 0px 0px;
+}
+
+/*Estilização dos Icons*/
+.fa-users{
+    transform: scale(1.1);
+    color:var(--color0);
+}
+.fa-html5{
+    transform: scale(1.1);
+    color:rgb(255, 119, 0); 
+}
+.fa-css3-alt{
+    transform: scale(1.1);
+    color: rgb(52, 52, 255);
+}
+.fa-js{
+    transform: scale(1.1);
+    color: #b0ad10;
+}
+.fa-java{
+    color: var(--color1);
+}
