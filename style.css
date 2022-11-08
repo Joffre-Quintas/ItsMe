@@ -103,16 +103,7 @@ mark{
 body.light{
     background-image: linear-gradient(white,white);
 }
-.menu-navigator{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
-    background-color: rgb(25, 25, 25);
-    position: fixed;
-    height: 100%;
-    min-width: min-content;
-    
-}
+
 .container{
     width: 100%;
     margin: 20px 20px 0px 200px;
@@ -122,6 +113,16 @@ body.light{
 .logo-joffre{
     width: 150px;
     margin: 20px auto;
+}
+.menu-navigator{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    height: 100%;
+    min-width: min-content;
+    box-shadow: 0px 2px 5px black;
 }
 .menu{
     display: flex;
